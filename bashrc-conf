@@ -26,3 +26,10 @@
 #export PILOTRATE=115200
 
 test -s ~/.alias && . ~/.alias || true
+
+#git completion
+source ~/git-completion.bash
+#git Bash Prompt
+. ~/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1='[\@] \e[0;31m\u\e[m @ \e[0;32m\h\e[m \w\e[0;33m$(__git_ps1 " (%s)")\e[m\$ '
